@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>authentication-and-authorization</artifactId>
+    <artifactId>spring-auth-boilerplate</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>authentication-and-authorization</name>
-    <description>authentication-and-authorization</description>
+    <name>spring-auth-boilerplate</name>
+    <description>spring-auth-boilerplate</description>
     <url/>
     <licenses>
         <license/>
@@ -90,6 +90,26 @@
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct</artifactId>
             <version>1.5.5.Final</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>8.0.2.Final</version>
+        </dependency>
+
+        <!-- Springdoc OpenAPI for Swagger UI and API Docs -->
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+            <version>2.7.0</version>
+        </dependency>
+
+        <!-- Thymeleaf -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
     </dependencies>
 
