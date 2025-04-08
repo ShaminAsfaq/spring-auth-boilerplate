@@ -81,7 +81,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
     private void handleAuthenticationError(HttpServletResponse response, Exception e) throws IOException {
         logger.error("Auth error", e);
-        response.setStatus(406);
+        response.setStatus(401);
         response.getWriter().write("{\"error\":\"" + INVALID_TOKEN_MESSAGE + "\"}");
         response.getWriter().flush();
     }
